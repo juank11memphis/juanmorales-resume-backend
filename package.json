@@ -1,0 +1,31 @@
+{
+  "name": "juanmorales-resume-backend",
+  "version": "0.1.0",
+  "description": "Backend for my online resume",
+  "main": "app.js",
+  "author": "Juan Morales <juank.memphis@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juank11memphis/juanmorales-resume-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juank11memphis/juanmorales-resume-backend/issues"
+  },
+  "homepage": "https://github.com/juank11memphis/juanmorales-resume-backend#readme",
+  "dependencies": {
+    "body-parser": "1.16.1",
+    "config": "1.25.1",
+    "express": "4.14.1",
+    "morgan": "1.8.1"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon app.js",
+    "start-prod": "cross-env NODE_ENV=production node app.js",
+    "test": "cross-env NODE_ENV=test mocha --timeout 10000"
+  },
+  "devDependencies": {
+    "cross-env": "3.1.4",
+    "nodemon": "1.11.0"
+  }
+}
