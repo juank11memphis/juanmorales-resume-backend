@@ -1,6 +1,6 @@
 function buildResponseObject(error, result) {
   error = error === null ? undefined : error;
-  let responseObject = {
+  const responseObject = {
     error: error,
     result: result
   };

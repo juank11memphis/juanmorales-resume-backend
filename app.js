@@ -1,8 +1,9 @@
-let express = require('express');
-let bodyParser = require('body-parser');
-let config = require('config');
-let morgan = require('morgan');
-let app = express();
+const express = require('express');
+const bodyParser = require('body-parser');
+const config = require('config');
+const morgan = require('morgan');
+const cors = require('cors');
+const app = express();
 
 if(config.util.getEnv('NODE_ENV') !== 'test') {
   app.use(morgan('combined'));
@@ -14,10 +15,23 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/json'}));
 
-// Import Models and Controllers
-let HeaderCtrl = require('./controllers/header');
+//CORS Enable
+const originsWhitelist = [
+  'http://localhost:3000'
+];
+const corsOptions = {
+  origin: function(origin, callback){
+    const isWhitelisted = originsWhitelist.indexOf(origin) !== -1;
+    callback(null, isWhitelisted);
+  }
+}
+app.use(cors(corsOptions));
 
-let router = express.Router();
+// Import Models and Controllers
+const HeaderCtrl = require('./controllers/header');
+const SkillsCtrl = require('./controllers/skills');
+
+const router = express.Router();
 
 // Index - Route
 router.get('/', function(req, res) {
@@ -27,10 +41,13 @@ router.get('/', function(req, res) {
 app.use(router);
 
 // API routes
-let api = express.Router();
+const api = express.Router();
 
 api.route('/header')
   .get(HeaderCtrl.getData);
+
+api.route('/skills')
+  .get(SkillsCtrl.getData);
 
 app.use('/api', api);
 
