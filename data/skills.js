@@ -1,6 +1,7 @@
 module.exports = {
   pageData: {
-    title: 'Skills By',
+    title: 'Skills',
+    skillsByText: 'By',
     skillsByOptions: [
       {
         value: 'category',
