@@ -1,7 +1,6 @@
 module.exports = {
   pageData: {
-    title: 'Skills',
-    sortByText: 'By',
+    title: 'Skills By',
     skillsByOptions: [
       {
         value: 'category',
@@ -22,6 +21,10 @@ module.exports = {
           text: 'Front-End'
         },
         {
+          value: 'frontendlibs',
+          text: 'Front-End Libs'
+        },
+        {
           value: 'backend',
           text: 'Back-End'
         },
@@ -32,14 +35,6 @@ module.exports = {
         {
           value: 'social',
           text: 'Social'
-        },
-        {
-          value: 'architecture',
-          text: 'Architecture'
-        },
-        {
-          value: 'databases',
-          text: 'Databases'
         },
         {
           value: 'devops',
@@ -117,77 +112,77 @@ module.exports = {
         id: 8,
         name: 'Gulp',
         expertise: 'expert',
-        category: 'frontend',
+        category: 'frontendlibs',
         expertiseValue: 5
       },
       {
         id: 9,
         name: 'Webpack/Webpack 2',
         expertise: 'proficient',
-        category: 'frontend',
+        category: 'frontendlibs',
         expertiseValue: 4
       },
       {
         id: 10,
         name: 'Grunt',
         expertise: 'proficient',
-        category: 'frontend',
+        category: 'frontendlibs',
         expertiseValue: 4
       },
       {
         id: 11,
         name: 'SystemJS',
         expertise: 'proficient',
-        category: 'frontend',
+        category: 'frontendlibs',
         expertiseValue: 4
       },
       {
         id: 12,
         name: 'Fusebox',
         expertise: 'learning',
-        category: 'frontend',
+        category: 'frontendlibs',
         expertiseValue: 1
       },
       {
         id: 13,
         name: 'SASS',
         expertise: 'expert',
-        category: 'frontend',
+        category: 'frontendlibs',
         expertiseValue: 5
       },
       {
         id: 14,
         name: 'Bootstrap',
         expertise: 'proficient',
-        category: 'frontend',
+        category: 'frontendlibs',
         expertiseValue: 3
       },
       {
         id: 15,
         name: 'Angular Material',
         expertise: 'expert',
-        category: 'frontend',
+        category: 'frontendlibs',
         expertiseValue: 5
       },
       {
         id: 16,
         name: 'Angular Material 2',
         expertise: 'learning',
-        category: 'frontend',
+        category: 'frontendlibs',
         expertiseValue: 1
       },
       {
         id: 17,
         name: 'SemanticUI',
         expertise: 'proficient',
-        category: 'frontend',
+        category: 'frontendlibs',
         expertiseValue: 4
       },
       {
         id: 18,
         name: 'SemanticUI React',
         expertise: 'proficient',
-        category: 'frontend',
+        category: 'frontendlibs',
         expertiseValue: 3
       },
       {
@@ -205,11 +200,18 @@ module.exports = {
         expertiseValue: 3
       },
       {
+        id: 212,
+        name: 'Express',
+        expertise: 'proficient',
+        category: 'backend',
+        expertiseValue: 3
+      },
+      {
         id: 21,
         name: 'Java',
         expertise: 'intermediate',
         category: 'backend',
-        expertiseValue: 2
+        expertiseValue: 2.5
       },
       {
         id: 22,
@@ -261,6 +263,13 @@ module.exports = {
         expertiseValue: 5
       },
       {
+        id: 282,
+        name: 'Unit Testing',
+        expertise: 'proficient',
+        category: 'agile',
+        expertiseValue: 3.5
+      },
+      {
         id: 29,
         name: 'Kanban',
         expertise: 'expert',
@@ -285,36 +294,36 @@ module.exports = {
         id: 32,
         name: 'Research and Innovation',
         expertise: 'expert',
-        category: 'architecture',
+        category: 'social',
         expertiseValue: 5
-      },
-      {
-        id: 33,
-        name: 'Design Patterns',
-        expertise: 'proficient',
-        category: 'architecture',
-        expertiseValue: 4
       },
       {
         id: 34,
         name: 'MySQL',
         expertise: 'proficient',
-        category: 'databases',
-        expertiseValue: 4
+        category: 'backend',
+        expertiseValue: 3.5
       },
       {
         id: 35,
         name: 'DynamoDB',
         expertise: 'intermediate',
-        category: 'databases',
+        category: 'backend',
         expertiseValue: 2
       },
       {
         id: 36,
         name: 'MongoDB',
-        expertise: 'proficient',
-        category: 'databases',
-        expertiseValue: 3
+        expertise: 'intermediate',
+        category: 'backend',
+        expertiseValue: 2.5
+      },
+      {
+        id: 362,
+        name: 'Mongoose',
+        expertise: 'intermediate',
+        category: 'backend',
+        expertiseValue: 2.5
       },
       {
         id: 37,
