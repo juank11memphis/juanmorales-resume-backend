@@ -30,6 +30,7 @@ app.use(cors(corsOptions));
 // Import Models and Controllers
 const HeaderCtrl = require('./controllers/header');
 const SkillsCtrl = require('./controllers/skills');
+const ExperienceCtrl = require('./controllers/experience');
 
 const router = express.Router();
 
@@ -48,6 +49,9 @@ api.route('/header')
 
 api.route('/skills')
   .get(SkillsCtrl.getData);
+
+api.route('/experience')
+  .get(ExperienceCtrl.getData);
 
 app.use('/api', api);
 
