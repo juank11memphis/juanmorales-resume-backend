@@ -1,6 +1,6 @@
 const commons = require('./commons');
-const headerData = require('../data/header');
+const headerPageData = require('../data/header').pageData;
 
-exports.getData = (request, response) => {
-  response.status(200).json(commons.buildResponseObject(null, headerData));
+exports.getPageData = (request, response) => {
+  response.status(200).json(commons.buildResponseObject(null, headerPageData));
 };

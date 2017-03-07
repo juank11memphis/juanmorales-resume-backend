@@ -29,6 +29,7 @@ app.use(cors(corsOptions));
 
 // Import Models and Controllers
 const HeaderCtrl = require('./controllers/header');
+const HomeCtrl = require('./controllers/home');
 const SkillsCtrl = require('./controllers/skills');
 const ExperienceCtrl = require('./controllers/experience');
 
@@ -44,8 +45,11 @@ app.use(router);
 // API routes
 const api = express.Router();
 
-api.route('/header')
-  .get(HeaderCtrl.getData);
+api.route('/header/pagedata')
+  .get(HeaderCtrl.getPageData);
+
+api.route('/home/pagedata')
+  .get(HomeCtrl.getPageData);
 
 api.route('/skills')
   .get(SkillsCtrl.getData);
