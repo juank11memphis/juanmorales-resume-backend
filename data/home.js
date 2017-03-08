@@ -16,6 +16,10 @@ exports.pageData = [
     },
     experience: {
       title: 'Professional Experience'
+    },
+    projects: {
+      title: 'Projects',
+      viewMoreText: 'View More'
     }
   }
 ];

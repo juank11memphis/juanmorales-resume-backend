@@ -220,11 +220,25 @@ exports.data = {
       expertiseValue: 3
     },
     {
-      id: 25,
-      name: 'AWS (Lambdas, API Gateway, EC2)',
-      expertise: 'proficient',
+      id: 252,
+      name: 'AWS Lambdas',
+      expertise: 'intermediate',
       category: 'devops',
-      expertiseValue: 3
+      expertiseValue: 2.5
+    },
+    {
+      id: 253,
+      name: 'AWS API Gateway',
+      expertise: 'intermediate',
+      category: 'devops',
+      expertiseValue: 2.5
+    },
+    {
+      id: 254,
+      name: 'AWS EC2',
+      expertise: 'intermediate',
+      category: 'devops',
+      expertiseValue: 2.5
     },
     {
       id: 26,
@@ -323,6 +337,27 @@ exports.data = {
       expertise: 'learning',
       category: 'frontend',
       expertiseValue: 1
+    },
+    {
+      id: 213,
+      name: 'Hibernate',
+      expertise: 'intermediate',
+      category: 'backend',
+      expertiseValue: 2
+    },
+    {
+      id: 214,
+      name: 'Spring',
+      expertise: 'intermediate',
+      category: 'backend',
+      expertiseValue: 2
+    },
+    {
+      id: 151,
+      name: 'Typescript',
+      expertise: 'proficient',
+      category: 'frontendlibs',
+      expertiseValue: 3.5
     }
   ]
 };
