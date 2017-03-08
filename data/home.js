@@ -20,6 +20,9 @@ exports.pageData = [
     projects: {
       title: 'Projects',
       viewMoreText: 'View More'
+    },
+    education: {
+      title: 'Education'
     }
   }
 ];

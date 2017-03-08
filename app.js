@@ -33,6 +33,7 @@ const HomeCtrl = require('./controllers/home');
 const SkillsCtrl = require('./controllers/skills');
 const ExperienceCtrl = require('./controllers/experience');
 const ProjectsCtrl = require('./controllers/projects');
+const EducationCtrl = require('./controllers/education');
 
 const router = express.Router();
 
@@ -63,6 +64,9 @@ api.route('/projects')
 
 api.route('/projects/featured')
   .get(ProjectsCtrl.getFeaturedProjectsData);
+
+api.route('/education')
+  .get(EducationCtrl.getData);
 
 app.use('/api', api);
 
