@@ -23,6 +23,9 @@ exports.pageData = [
     },
     education: {
       title: 'Education'
+    },
+    interests: {
+      title: 'Personal Interests'
     }
   }
 ];
