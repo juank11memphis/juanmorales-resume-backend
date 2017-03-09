@@ -8,14 +8,18 @@ exports.pageData = [
         text: 'Home'
       },
       {
-        to: '/',
-        hash: 'skills',
+        to: {
+          pathname: '/',
+          hash: '#skills'
+        },
         name: 'skills',
         text: 'Skills'
       },
       {
-        to: '/',
-        hash: 'experience',
+        to: {
+          pathname: '/',
+          hash: '#experience'
+        },
         name: 'experience',
         text: 'Experience'
       },
@@ -25,8 +29,10 @@ exports.pageData = [
         text: 'Projects'
       },
       {
-        to: '/',
-        hash: 'education',
+        to: {
+          pathname: '/',
+          hash: '#education'
+        },
         name: 'education',
         text: 'Education'
       },
