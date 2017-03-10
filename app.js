@@ -67,6 +67,9 @@ api.route('/projects')
 api.route('/projects/featured')
   .get(ProjectsCtrl.getFeaturedProjectsData);
 
+api.route('/projects/pagedata')
+  .get(ProjectsCtrl.getPageData);
+
 api.route('/education')
   .get(EducationCtrl.getData);
 
