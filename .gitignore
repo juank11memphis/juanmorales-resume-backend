@@ -14,3 +14,7 @@ dist
 
 # Mac files
 .DS_Store
+
+# Google Api files
+gmail-credentials.json
+client_secret.json

@@ -35,6 +35,7 @@ const ExperienceCtrl = require('./controllers/experience');
 const ProjectsCtrl = require('./controllers/projects');
 const EducationCtrl = require('./controllers/education');
 const InterestsCtrl = require('./controllers/interests');
+const ContactCtrl = require('./controllers/contact');
 const FooterCtrl = require('./controllers/footer');
 
 const router = express.Router();
@@ -75,6 +76,12 @@ api.route('/education')
 
 api.route('/interests')
   .get(InterestsCtrl.getData);
+
+api.route('/contact/pagedata')
+  .get(ContactCtrl.getPageData);
+
+api.route('/contact')
+  .post(ContactCtrl.sendContactMessage);
 
 api.route('/footer/pagedata')
   .get(FooterCtrl.getPageData);
