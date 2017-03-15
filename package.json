@@ -1,6 +1,6 @@
 {
   "name": "juanmorales-resume-backend",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Backend for my online resume",
   "main": "app.js",
   "author": "Juan Morales <juank.memphis@gmail.com>",
