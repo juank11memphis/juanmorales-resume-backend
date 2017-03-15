@@ -14,10 +14,10 @@
   },
   "homepage": "https://github.com/juank11memphis/juanmorales-resume-backend#readme",
   "dependencies": {
-    "body-parser": "1.16.1",
+    "body-parser": "1.17.1",
     "config": "1.25.1",
     "cors": "2.8.1",
-    "express": "4.14.1",
+    "express": "4.15.2",
     "google-auth-library": "0.10.0",
     "googleapis": "18.0.0",
     "morgan": "1.8.1"
@@ -28,7 +28,7 @@
     "test": "cross-env NODE_ENV=test mocha --timeout 10000"
   },
   "devDependencies": {
-    "cross-env": "3.1.4",
+    "cross-env": "3.2.4",
     "nodemon": "1.11.0"
   }
 }

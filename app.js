@@ -15,17 +15,21 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/json'}));
 
+// Serving static files
+app.use('/static', express.static('public'));
+
 //CORS Enable
-const originsWhitelist = [
-  'http://localhost:3000'
-];
-var corsOptions = {
-  origin: function(origin, callback){
-    var originIsWhitelisted = originsWhitelist.indexOf(origin) !== -1;
-    callback(originIsWhitelisted ? null : 'Bad Request', originIsWhitelisted);
-  }
-};
-app.use(cors(corsOptions));
+// const originsWhitelist = [
+//   'http://localhost:3000'
+// ];
+// var corsOptions = {
+//   origin: function(origin, callback){
+//     var originIsWhitelisted = originsWhitelist.indexOf(origin) !== -1;
+//     console.log('CORS: ', origin, originIsWhitelisted);
+//     callback(originIsWhitelisted ? null : 'Bad Request', originIsWhitelisted);
+//   }
+// };
+// app.use(cors(corsOptions));
 
 // Import Models and Controllers
 const HeaderCtrl = require('./controllers/header');
@@ -86,6 +90,7 @@ api.route('/contact')
 api.route('/footer/pagedata')
   .get(FooterCtrl.getPageData);
 
+// Serving the api
 app.use('/api', api);
 
 // Start server
