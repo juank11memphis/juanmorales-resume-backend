@@ -19,12 +19,12 @@ app.use(bodyParser.json({ type: 'application/json'}));
 const originsWhitelist = [
   'http://localhost:3000'
 ];
-const corsOptions = {
+var corsOptions = {
   origin: function(origin, callback){
-    const isWhitelisted = originsWhitelist.indexOf(origin) !== -1;
-    callback(null, isWhitelisted);
+    var originIsWhitelisted = originsWhitelist.indexOf(origin) !== -1;
+    callback(originIsWhitelisted ? null : 'Bad Request', originIsWhitelisted);
   }
-}
+};
 app.use(cors(corsOptions));
 
 // Import Models and Controllers
