@@ -462,7 +462,7 @@ exports.all = [
         type: 'personal',
         link: 'https://www.npmjs.com/package/angular-jk-carousel',
         accomplishments: [
-          'Around 550 downloads per month on NPM'
+          'Around 600 downloads per month on NPM'
         ]
       },
       {
